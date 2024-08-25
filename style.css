@@ -1,0 +1,363 @@
+/* Base styles */
+
+/* Flexbox container to align text and image side by side */
+.container {
+    border: 2px solid whitesmoke;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 1px 1px 0 rgba(0, 0, 0, 0.17);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.reviews {
+    display: inline-block;
+    height: 140px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing between text and image */
+    margin-top: 20px;
+}
+
+.text-content {
+    flex: 1; /* Text takes up available space */
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.image-content img {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+    max-height: 300px; /* Adjust max height as needed */
+    border-radius: 8px; /* Optional: adds rounded corners to image */
+}
+
+h3 {
+    margin-top: 20px;
+    color: black; /* Change color as needed */
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 20px 7px 20px;
+    background-color: whitesmoke;
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    color: crimson;
+}
+
+/* Additional styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+}
+
+.tyreplex-headline {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: crimson;
+    font-weight: 600;
+}
+
+.bg-body-tertiary {
+    background-color: #f8f9fa;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.nav-icon:hover {
+    color: crimson;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Expert Growth Section */
+.expert-growth-section {
+    text-align: center;
+    margin: 50px 0;
+    padding-left: 30px;
+}
+
+.growth-box {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(25% - 40px);
+}
+
+.growth-box h5 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.growth-box p {
+    font-size: 1.2em;
+}
+
+/* Services by Dealer */
+.Services {
+    border: 2px solid white;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 1px 1px 0 rgba(0, 0, 0, 0.17);
+    border-radius: 40px;
+}
+
+.Servicescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 1px 1px 0 rgba(0, 0, 0, 0.17);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    max-width: 500px; /* Changed from 1000px to 300px */
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & Previous Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "Next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Payment Section */
+.payment-methods {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.payment-option img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.payment-option h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: whitesmoke;
+    color: #130F268A;
+    padding: 40px 0;
+}
+
+.footer .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-links a {
+    color: #130F268A;
+    text-decoration: none;
+    margin: 0 15px;
+    display: block;
+}
+
+.footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.footer .social-icons a {
+    color: #130F268A;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #130F268A;
+}
+
+.footer .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 5px;
+    }
+
+    .growth-box {
+        width: calc(33.333% - 20px);
+    }
+
+    .Services {
+        width: calc(50% - 20px);
+    }
+
+    .slideshow-container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+    }
+
+    .growth-box {
+        width: calc(50% - 20px);
+    }
+
+    .Services {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .tyreplex-headline {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+
+    .nav-icon {
+        font-size: 1.25rem;
+    }
+
+    .slideshow-container {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container, .growth-box, .Services {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .footer-logo {
+        font-size: 1.2rem;
+    }
+
+    .footer .footer-links a {
+        margin: 0 10px;
+    }
+
+    .footer .social-icons i {
+        font-size: 1.2rem;
+    }
+}
